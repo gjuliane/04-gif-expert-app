@@ -16,6 +16,7 @@ input{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card{
@@ -34,4 +35,14 @@ input{
 
 .card img{
   max-height: 170px;
+}
+
+@media (max-width:768px) {
+  body{
+    padding: 10px;
+  }
+  .card img{
+    max-height: 150px;
+    justify-content: center;
+  }
 }

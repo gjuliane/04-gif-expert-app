@@ -20,17 +20,18 @@ export const GifExpertApp = props => {
             <AddCategory setCategories= { setCategories} />
             <hr/>
             {/* <button onClick={ handleAdd }>Agregar</button> */}
-            <ol>
+            <div>
                 {
                     categories.map( category => {
                         return <GifGrid
-                            key={ category }
-                            category= { category }
+                        key={ category }
+                        category= { category }
                         />
                     })
-
+                    
                 }
-            </ol>
+            </div>
+
         </>
     )
 }
